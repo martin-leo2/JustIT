@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <style>
+            body {display:grid; place-items: center; height: 100vh;}
+            form {background-color:rgb(40, 38, 54); color:burlywood;}
+            table {text-align: right;}
+            td {padding: 9px;}
+        </style>
+    </head>
+
+    <body>
+        <form  action="./w1-d4_submit.html">
+            <table>
+                <tr>
+                    <td colspan="2" style="text-align: left; font-weight: bold; background-color:darkgoldenrod; color:white; padding: 15px">Sign Up</td>
+                </tr>
+
+                <tr>
+                    <td>First Name</td>
+                    <td style="text-align: left;"><input type="text" placeholder="Enter First Name" required></td>
+                </tr>
+
+                <tr>
+                    <td>Last Name</td>
+                    <td style="text-align: left;"><input type="text"  placeholder="Enter Last Name" required></td>
+                </tr>
+
+<!-- 
+                <tr>
+                    <td>Date of Birth</td>
+                    <td style="text-align: left;">
+                        <input type="date">
+                    </td>
+                </tr>  
+-->
+
+                <tr>
+                    <td>Date of Birth</td>
+                    <td style="text-align: left";>
+                        <select name="Day" id="Day" required>
+                            <option value="" disabled selected hidden>Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <select name="Month" id="Month" required>
+                            <option value="" disabled selected hidden>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="2">April</option>
+                            <option value="3">May</option>
+                        </select>
+                        <select name="Year" id="Year" required>
+                            <option value="" disabled selected hidden>Year</option>
+                            <option value="1900">1000</option>
+                            <option value="1901">1001</option>
+                            <option value="1902">1002</option>
+                            <option value="1903">1003</option>
+                            <option value="1904">1004</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td style="text-align: left;">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td style="text-align: left;">
+                        <select name="country" id="country">
+                            <option value="" disabled selected>Select Country</option>
+                            <option value="za">Zamunda</option>
+                            <option value="na">Namunda</option>
+                            <option value="la">Lamunda</option>
+                        </select>
+                    </td>
+                </tr>                
+    
+                <tr>
+                    <td>E-mail</td>
+                    <td style="text-align: left;"><input type="email" placeholder="Enter E-mail" required></td>
+                </tr>
+
+                <tr>
+                    <td>Phone</td>
+                    <td style="text-align: left;"><input type="text" placeholder="Enter Phone"></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td style="text-align: left;"><input type="password" id="pwd" name="pwd"  required></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td style="text-align: left;"><input type="password" id="pwdconfirm" name="pwdconfirm"  required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="background-color:rgb(40, 38, 54);">
+                        <input type="checkbox" id="terms" name="terms" value="terms" required>
+                        <label for="terms" id="terms">I Agree to the Terms of use</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: right; background-color:darkgoldenrod;">
+                        <input type="submit" value="Submit" style="border:none; background-color:green; color: white; padding: 5px">
+                        <input type="reset" value="Cancel" style="border:none; background-color:red; color: white; padding: 5px">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
