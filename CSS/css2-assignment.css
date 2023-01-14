@@ -1,0 +1,64 @@
+
+.body{
+    display:grid; 
+    place-items: center; 
+    height: 100vh;
+}
+
+form{
+    background-color:rgb(40, 38, 54); 
+    color:burlywood;
+}
+
+table {
+    width: 400px;
+}
+
+td {
+    padding: 9px;
+}
+
+.txtright{
+    text-align: right;
+}
+
+.btns, .btnc {
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+
+.btns{
+    background-color:green;
+}
+
+.btnc{
+    background-color:red;
+}
+
+.btns:hover, .btnc:hover{
+    background-color: yellowgreen;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

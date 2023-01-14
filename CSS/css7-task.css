@@ -1,0 +1,67 @@
+
+/* 
+TASK: have 3 pictures with spcific width and height. 
+With the help of transition and transform when hovering the mouse pointer on any picture,
+it should rotate 90 deg. and change to bigger height and width.
+*/
+
+img  {
+    width: 300px;
+    height: 200px;
+}
+
+.img1, .img2, .img3{
+    transition: transform 2s;
+}
+
+.img1:hover, .img2:hover, .img3:hover{
+    transform: rotate(90deg);
+    width: 500px;
+    height: 332px;
+}
+
+
+/* 
+TASK: Create a simple webpage with Grid,
+header, menu, side bar
+*/
+
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.item4{grid-area: item4;}
+.item5{grid-area: item5;}
+
+.container{
+    background-color: rgb(26, 26, 77)
+    ;
+    display: grid;
+    column-gap: 5px;    
+    row-gap: 5px;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px 500px 50px;
+    grid-template-areas:
+    'item1 item1 item1'
+    'item2 item2 item2'
+    'item3 item4 item4'
+    'item3 item5 item5';
+}
+
+.item1, .item2, .item3, .item4, .item5{
+    background-color: rgb(223, 215, 215);
+    min-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
